@@ -8,7 +8,7 @@ db = SQLAlchemy(app)
 
 api = Api(app)
 
-from myapp.console.views import console
-app.register_blueprint(console)
+from myapp.jogador.views import jogador
+app.register_blueprint(jogador)
 
 db.create_all()
